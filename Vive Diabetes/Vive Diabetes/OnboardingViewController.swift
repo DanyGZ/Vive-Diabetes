@@ -9,12 +9,15 @@
 import UIKit
 
 class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSource {
-
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setViewControllers([getStepZero()], direction: .forward, animated: false, completion: nil)
         dataSource = self
+        appDelegate.boardingScreen = self
+        
     }
 
     func getStepZero() -> StepZeroViewController {
@@ -54,6 +57,16 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
             return getStepThree()
         } else {
             return nil
+        }
+    }
+    
+    func turnNextPage(actualPage: Int){
+        if actualPage==0{
+            setViewControllers([getStepOne()], direction: .forward, animated: true, completion: nil)
+        } else if actualPage==1{
+            setViewControllers([getStepTwo()], direction: .forward, animated: true, completion: nil)
+        } else if actualPage==2{
+            setViewControllers([getStepThree()], direction: .forward, animated: true, completion: nil)
         }
     }
     

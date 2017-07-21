@@ -1,0 +1,6 @@
+framework module Pods_Vive_Diabetes {
+  umbrella header "Pods-Vive Diabetes-umbrella.h"
+
+  export *
+  module * { export * }
+}
