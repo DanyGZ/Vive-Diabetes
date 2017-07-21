@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		8447C6F71F2119CA00135816 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C6F61F2119CA00135816 /* SignUpViewController.swift */; };
 		8447C6F91F211D7D00135816 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C6F81F211D7D00135816 /* DisclaimerViewController.swift */; };
-		8447C6FD1F21324900135816 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447C6FC1F21324900135816 /* SWRevealViewController.m */; };
 		8447C7031F213E4700135816 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C7021F213E4700135816 /* MainMenuViewController.swift */; };
 		845FD93F1F1D254D006B4A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD93E1F1D254D006B4A42 /* AppDelegate.swift */; };
 		845FD9411F1D254D006B4A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FD9401F1D254D006B4A42 /* ViewController.swift */; };
 		845FD9441F1D254D006B4A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845FD9421F1D254D006B4A42 /* Main.storyboard */; };
 		845FD9461F1D254D006B4A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FD9451F1D254D006B4A42 /* Assets.xcassets */; };
 		845FD9491F1D254D006B4A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845FD9471F1D254D006B4A42 /* LaunchScreen.storyboard */; };
+		84E372AC1F224BCC00765D11 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E372AB1F224BCC00765D11 /* SWRevealViewController.m */; };
 		84FC4B541F1FDADA006186B0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC4B531F1FDADA006186B0 /* OnboardingViewController.swift */; };
 		84FC4B561F1FDC65006186B0 /* StepZeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC4B551F1FDC65006186B0 /* StepZeroViewController.swift */; };
 		84FC4B581F1FDD84006186B0 /* StepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC4B571F1FDD84006186B0 /* StepOneViewController.swift */; };
@@ -28,8 +28,6 @@
 		8447C6F61F2119CA00135816 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8447C6F81F211D7D00135816 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		8447C6FA1F21324800135816 /* Vive Diabetes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vive Diabetes-Bridging-Header.h"; sourceTree = "<group>"; };
-		8447C6FB1F21324900135816 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../Downloads/SWRevealViewControllers/SWRevealViewController.h; sourceTree = "<group>"; };
-		8447C6FC1F21324900135816 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../Downloads/SWRevealViewControllers/SWRevealViewController.m; sourceTree = "<group>"; };
 		8447C7021F213E4700135816 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		845FD93B1F1D254D006B4A42 /* Vive Diabetes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vive Diabetes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845FD93E1F1D254D006B4A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +36,8 @@
 		845FD9451F1D254D006B4A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845FD9481F1D254D006B4A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845FD94A1F1D254D006B4A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E372AA1F224BC300765D11 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		84E372AB1F224BCC00765D11 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		84FC4B531F1FDADA006186B0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		84FC4B551F1FDC65006186B0 /* StepZeroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepZeroViewController.swift; sourceTree = "<group>"; };
 		84FC4B571F1FDD84006186B0 /* StepOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepOneViewController.swift; sourceTree = "<group>"; };
@@ -76,13 +76,13 @@
 		845FD93D1F1D254D006B4A42 /* Vive Diabetes */ = {
 			isa = PBXGroup;
 			children = (
+				84E372AB1F224BCC00765D11 /* SWRevealViewController.m */,
+				84E372AA1F224BC300765D11 /* SWRevealViewController.h */,
 				845FD93E1F1D254D006B4A42 /* AppDelegate.swift */,
 				845FD9401F1D254D006B4A42 /* ViewController.swift */,
 				845FD9421F1D254D006B4A42 /* Main.storyboard */,
 				845FD9451F1D254D006B4A42 /* Assets.xcassets */,
 				845FD9471F1D254D006B4A42 /* LaunchScreen.storyboard */,
-				8447C6FB1F21324900135816 /* SWRevealViewController.h */,
-				8447C6FC1F21324900135816 /* SWRevealViewController.m */,
 				845FD94A1F1D254D006B4A42 /* Info.plist */,
 				84FC4B531F1FDADA006186B0 /* OnboardingViewController.swift */,
 				84FC4B551F1FDC65006186B0 /* StepZeroViewController.swift */,
@@ -180,9 +180,9 @@
 				845FD93F1F1D254D006B4A42 /* AppDelegate.swift in Sources */,
 				8447C6F71F2119CA00135816 /* SignUpViewController.swift in Sources */,
 				8447C7031F213E4700135816 /* MainMenuViewController.swift in Sources */,
-				8447C6FD1F21324900135816 /* SWRevealViewController.m in Sources */,
 				84FC4B5A1F1FDDB3006186B0 /* StepTwoViewController.swift in Sources */,
 				84FC4B5E1F1FDE7E006186B0 /* StepThreeViewController.swift in Sources */,
+				84E372AC1F224BCC00765D11 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
