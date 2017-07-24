@@ -10,26 +10,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var hereButtonOutlet: UIButton!
+    @IBOutlet weak var forgotPasswordOutlet: UIButton!
+    
+    var attrs = [
+        NSForegroundColorAttributeName : UIColor.white,
+        NSUnderlineStyleAttributeName : 1] as [String : Any]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let hereButtonTitleStr = NSMutableAttributedString(string:"aquí", attributes:attrs)
+        let forgotPasswordTitleStr = NSMutableAttributedString(string:"¿Olvidaste tu contraseña?", attributes:attrs)
+        
+        hereButtonOutlet.setAttributedTitle(hereButtonTitleStr, for: .normal)
+        forgotPasswordOutlet.setAttributedTitle(forgotPasswordTitleStr, for: .normal)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
