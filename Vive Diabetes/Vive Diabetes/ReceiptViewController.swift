@@ -16,4 +16,12 @@ class ReceiptViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showDialogAction(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "nutritionalInfoVC") as! NutricionalFactsViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    
 }

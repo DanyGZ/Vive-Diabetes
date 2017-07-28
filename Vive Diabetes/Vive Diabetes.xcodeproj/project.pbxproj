@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8423CA921F268DBE0087A715 /* RegisterGluoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423CA911F268DBE0087A715 /* RegisterGluoseViewController.swift */; };
+		842979101F2B9CD000BA5877 /* NutricionalFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429790F1F2B9CD000BA5877 /* NutricionalFactsViewController.swift */; };
 		8447C6F71F2119CA00135816 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C6F61F2119CA00135816 /* SignUpViewController.swift */; };
 		8447C6F91F211D7D00135816 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C6F81F211D7D00135816 /* DisclaimerViewController.swift */; };
 		8447C7031F213E4700135816 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C7021F213E4700135816 /* MainMenuViewController.swift */; };
@@ -39,6 +40,7 @@
 		7996B06F8EE01BCC6A2BEAFF /* Pods-Vive Diabetes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vive Diabetes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vive Diabetes/Pods-Vive Diabetes.debug.xcconfig"; sourceTree = "<group>"; };
 		8127A1008E630F6B1573402F /* Pods_Vive_Diabetes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vive_Diabetes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8423CA911F268DBE0087A715 /* RegisterGluoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterGluoseViewController.swift; sourceTree = "<group>"; };
+		8429790F1F2B9CD000BA5877 /* NutricionalFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutricionalFactsViewController.swift; sourceTree = "<group>"; };
 		8447C6F61F2119CA00135816 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8447C6F81F211D7D00135816 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		8447C6FA1F21324800135816 /* Vive Diabetes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vive Diabetes-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				84E8D8281F27D2BF002B3AE4 /* ReceiptListViewController.swift */,
 				84E8D82A1F27D961002B3AE4 /* ReceiptViewController.swift */,
 				84E8D82C1F27D9F7002B3AE4 /* DashBoardViewController.swift */,
+				8429790F1F2B9CD000BA5877 /* NutricionalFactsViewController.swift */,
 			);
 			path = "Vive Diabetes";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				84FC4B601F1FEBF2006186B0 /* LoginViewController.swift in Sources */,
 				845FD93F1F1D254D006B4A42 /* AppDelegate.swift in Sources */,
 				8447C6F71F2119CA00135816 /* SignUpViewController.swift in Sources */,
+				842979101F2B9CD000BA5877 /* NutricionalFactsViewController.swift in Sources */,
 				8447C7031F213E4700135816 /* MainMenuViewController.swift in Sources */,
 				84FC4B5A1F1FDDB3006186B0 /* StepTwoViewController.swift in Sources */,
 				84E8D8241F27CC30002B3AE4 /* ReceiptItemTableViewCell.swift in Sources */,
