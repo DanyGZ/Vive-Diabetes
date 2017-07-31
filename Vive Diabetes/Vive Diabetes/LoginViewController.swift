@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var hereButtonOutlet: UIButton!
     @IBOutlet weak var forgotPasswordOutlet: UIButton!
+    @IBOutlet weak var passwordEditText: UITextField!
+    @IBOutlet weak var showPasswordOutlet: UIButton!
     
     var attrs = [
         NSForegroundColorAttributeName : UIColor.white,
@@ -25,5 +27,15 @@ class LoginViewController: UIViewController {
         
         hereButtonOutlet.setAttributedTitle(hereButtonTitleStr, for: .normal)
         forgotPasswordOutlet.setAttributedTitle(forgotPasswordTitleStr, for: .normal)
+    }
+    
+    @IBAction func showPassword(_ sender: Any) {
+        if passwordEditText.isSecureTextEntry {
+            showPasswordOutlet.setImage(UIImage(named: "password_on") , for: .normal)
+        } else {
+            showPasswordOutlet.setImage(UIImage(named: "password_off") , for: .normal)
+        }
+        
+        passwordEditText.isSecureTextEntry = !passwordEditText.isSecureTextEntry
     }
 }

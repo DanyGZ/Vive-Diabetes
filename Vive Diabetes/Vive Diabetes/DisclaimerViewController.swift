@@ -9,6 +9,13 @@
 import UIKit
 
 class DisclaimerViewController: UIViewController {
+    
+    @IBOutlet weak var responsibilityCheck: UIImageView!
+    @IBOutlet weak var privacityCheck: UIImageView!
+    
+    var responsibilityAccepted = false
+    var privacityAccepted = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,9 +25,22 @@ class DisclaimerViewController: UIViewController {
     }
     
     func rightButtonAction(){
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "mainMenu")
-        self.present(nextViewController, animated: true, completion: nil)
+        if responsibilityAccepted && privacityAccepted {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "mainMenu")
+            self.present(nextViewController, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func responsibilityAccept(_ sender: Any) {
+        responsibilityAccepted = true
+        responsibilityCheck.image =  UIImage(named: "check_on")
+    }
+    
+    
+    @IBAction func privacityAccept(_ sender: Any) {
+        privacityAccepted = true
+        privacityCheck.image =  UIImage(named: "check_on")
     }
 
 }

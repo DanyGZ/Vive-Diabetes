@@ -15,15 +15,24 @@ class MainMenuViewController: UIViewController, UICollectionViewDelegateFlowLayo
     
     var imagesArray = Array<UIImage>()
     var textsArrays = Array<String>()
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let realPath = paths.first!
+        let flag = NSKeyedUnarchiver.unarchiveObject(withFile: realPath + "/flag.bin") as? String
+        if flag == nil {
+            NSKeyedArchiver.archiveRootObject("Guardado", toFile: realPath + "/flag.bin")
+        }
         
         self.collectionView.register(UINib.init(nibName: "MainMenuItemCollectionViewCell", bundle: nil),
                                      forCellWithReuseIdentifier: "menuCell")
         
         fillImageArray()
         sideMenu()
+        appDelegate.mainMenuVC = self
 
         // Do any additional setup after loading the view.
     }
@@ -55,6 +64,19 @@ class MainMenuViewController: UIViewController, UICollectionViewDelegateFlowLayo
         }
     }
     
+    func openGlucoseController(performAction: Bool){
+        if performAction {
+            UIApplication.shared.sendAction(menuButton.action!, to: menuButton.target, from: self, for: nil)
+        }
+        
+        self.performSegue(withIdentifier: "glucoseSegue", sender: self)
+    }
+    
+    func openDashboardController(){
+        UIApplication.shared.sendAction(menuButton.action!, to: menuButton.target, from: self, for: nil)
+        self.performSegue(withIdentifier: "dashboardSegue", sender: self)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "receiptListSegue", sender: self)
     }
@@ -72,6 +94,11 @@ class MainMenuViewController: UIViewController, UICollectionViewDelegateFlowLayo
         cell.layer.borderWidth = 1.5
         
         return cell
+    }
+    
+    
+    @IBAction func glucoseButtonAction(_ sender: Any) {
+        openGlucoseController(performAction: false)
     }
     
 }

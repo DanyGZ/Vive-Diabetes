@@ -17,6 +17,7 @@
 		845FD9441F1D254D006B4A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845FD9421F1D254D006B4A42 /* Main.storyboard */; };
 		845FD9461F1D254D006B4A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845FD9451F1D254D006B4A42 /* Assets.xcassets */; };
 		845FD9491F1D254D006B4A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845FD9471F1D254D006B4A42 /* LaunchScreen.storyboard */; };
+		847503D01F2F901E005BE762 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847503CF1F2F901E005BE762 /* MenuTableViewController.swift */; };
 		84E372AC1F224BCC00765D11 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E372AB1F224BCC00765D11 /* SWRevealViewController.m */; };
 		84E8D8241F27CC30002B3AE4 /* ReceiptItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8D8221F27CC30002B3AE4 /* ReceiptItemTableViewCell.swift */; };
 		84E8D8251F27CC30002B3AE4 /* ReceiptItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E8D8231F27CC30002B3AE4 /* ReceiptItemTableViewCell.xib */; };
@@ -52,6 +53,7 @@
 		845FD9451F1D254D006B4A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845FD9481F1D254D006B4A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845FD94A1F1D254D006B4A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847503CF1F2F901E005BE762 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		84E372AA1F224BC300765D11 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		84E372AB1F224BCC00765D11 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		84E8D8221F27CC30002B3AE4 /* ReceiptItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				84E8D82A1F27D961002B3AE4 /* ReceiptViewController.swift */,
 				84E8D82C1F27D9F7002B3AE4 /* DashBoardViewController.swift */,
 				8429790F1F2B9CD000BA5877 /* NutricionalFactsViewController.swift */,
+				847503CF1F2F901E005BE762 /* MenuTableViewController.swift */,
 			);
 			path = "Vive Diabetes";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				845FD9411F1D254D006B4A42 /* ViewController.swift in Sources */,
 				84FC4B581F1FDD84006186B0 /* StepOneViewController.swift in Sources */,
+				847503D01F2F901E005BE762 /* MenuTableViewController.swift in Sources */,
 				84FC4B541F1FDADA006186B0 /* OnboardingViewController.swift in Sources */,
 				84E8D82B1F27D961002B3AE4 /* ReceiptViewController.swift in Sources */,
 				8447C6F91F211D7D00135816 /* DisclaimerViewController.swift in Sources */,

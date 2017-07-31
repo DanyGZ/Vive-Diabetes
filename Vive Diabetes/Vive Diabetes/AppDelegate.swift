@@ -13,10 +13,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var boardingScreen: OnboardingViewController?
+    var mainMenuVC: MainMenuViewController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let realPath = paths.first!
+        let flag = NSKeyedUnarchiver.unarchiveObject(withFile: realPath + "/flag.bin") as? String
+        var initialViewController: UIViewController?
+        
+        if flag == nil {
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "onBoardingVC")
+        } else {
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "mainMenu")
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
